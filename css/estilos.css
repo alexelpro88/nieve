@@ -1,0 +1,148 @@
+body {
+    background-color: #87CEEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.snowman {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.snowman-hat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.hat-top {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(60, 152, 250);
+    border-radius: 10px 10px 0 0;
+}
+
+.hat-brim {
+    width: 150px;
+    height: 10px;
+    background-color: rgb(60, 152, 250);
+}
+
+.snowman-head, .snowman-body, .snowman-bottom {
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: relative;
+}
+
+.snowman-head {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0px;
+}
+
+.snowman-body {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.snowman-bottom {
+    width: 230px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye {
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+}
+
+.left-eye {
+    left: 25px;
+}
+
+.right-eye {
+    right: 25px;
+}
+
+.nose {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid orange;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mouth {
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+    width: 95px;
+}
+
+.mouth-dot {
+    width: 5px;
+    height: 6px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.button {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 15px 0;
+}
+
+.snowman-arms {
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+}
+
+.arm {
+    width: 80px;
+    height: 5px;
+    background-color: brown;
+    border-radius: 2px;
+}
+
+.left-arm {
+    transform: rotate(45deg);
+}
+
+.right-arm {
+    transform: rotate(-45deg);
+}
+
+.name {
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    color: red;
+    text-align: center;
+}
